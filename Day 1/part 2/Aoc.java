@@ -1,7 +1,6 @@
-import java.io.File;  // Import the File class
-import java.io.FileNotFoundException;  // Import this class to handle errors
+import java.io.File; // Import the File class
+import java.io.FileNotFoundException; // Import this class to handle errors
 import java.util.Scanner; // Import the Scanner class to read text files
-import java.util.Arrays;
 
 public class Aoc {
     public static String[][] ReadFile() {
@@ -14,7 +13,7 @@ public class Aoc {
                 FileArray[i] = myReader.nextLine().split("   ");
                 i++;
             }
-            myReader.close(); 
+            myReader.close();
         } catch (FileNotFoundException e) {
             System.out.println("An error occurred.");
             e.printStackTrace();
@@ -38,6 +37,6 @@ public class Aoc {
     }
 
     public static void main(String[] args) {
-        System.out.println(Solution(ReadFile())); 
+        System.out.println(Solution(ReadFile()));
     }
 }
